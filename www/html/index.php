@@ -9,7 +9,7 @@
        $tables = $query->fetchAll(PDO::FETCH_COLUMN);  
 
         if (empty($tables)) {
-          echo "<p>There are no tables in database \"{$database}\".</p>";
+          echo "<p>Tech \"{$database}\".</p>";
         } else {
           echo "<p>Database \"{$database}\" has the following tables:</p>";
           echo "<ul>";
