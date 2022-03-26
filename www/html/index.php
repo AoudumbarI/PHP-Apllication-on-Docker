@@ -1,11 +1,3 @@
-<!DOCTYPE html>  
-     <head>  
-      <title>Hello World!</title>
-     </head>   
-
-     <body>  
-      <h1>Hello World!</h1>  
-      <p><?php echo 'We are running PHP, version: ' . phpversion(); ?></p>  
       <?  
        $database ="mydb";  
        $user = "myuser";  
@@ -27,5 +19,27 @@
           echo "</ul>";
         }
         ?>
+<html>
+    <head>
+        <title>Create simple login page with PHP and MySQL</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="">
+                <div id="div_login">
+                    <h1>Login</h1>
+                    <div>
+                        <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+                    </div>
+                    <div>
+                        <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" name="but_submit" id="but_submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
